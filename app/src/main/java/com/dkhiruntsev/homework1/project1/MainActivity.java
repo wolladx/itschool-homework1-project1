@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.MainActivity);
 
         SeekBar seekBarRed = findViewById(R.id.seekBarRed);
         SeekBar seekBarGreen = findViewById(R.id.seekBarGreen);
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void apply(android.view.View view){
-        setContentView(R.layout.result_screen);
+        setContentView(R.layout.ColorActivity);
         TextView colorDisplay = findViewById(R.id.colorDisplayRGBFormat);
         colorDisplay.setText(Arrays.toString(RGB).replace("[", "").replace("]", ""));
         ConstraintLayout currentLayout = (ConstraintLayout) findViewById(R.id.result_screen_id);
